@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', ()=> {
     const db = document.getElementById('db')
     const ui = document.getElementById('ui')
     const ip = document.getElementById('ip')
+    const ot = document.getElementById('ot')
 
     nav.forEach(item => {
         item.addEventListener('click', ()=> {
@@ -18,30 +19,42 @@ document.addEventListener('DOMContentLoaded', ()=> {
                 db.style.display = 'none'
                 ui.style.display = 'none'
                 ip.style.display = 'none'
+                ot.style.display = 'none'
             } else if (item.id === 'fr-1') {
                 pl.style.display = 'none'
                 fr.style.display = 'block'
                 db.style.display = 'none'
                 ui.style.display = 'none'
                 ip.style.display = 'none'
+                ot.style.display = 'none'
             } else if (item.id === 'db-1') {
                 pl.style.display = 'none'
                 fr.style.display = 'none'
                 db.style.display = 'block'
                 ui.style.display = 'none'
                 ip.style.display = 'none'
+                ot.style.display = 'none'
             } else if (item.id === 'ui-1') {
                 pl.style.display = 'none'
                 fr.style.display = 'none'
                 db.style.display = 'none'
                 ui.style.display = 'block'
                 ip.style.display = 'none'
+                ot.style.display = 'none'
+            } else if (item.id === "ot-1") {
+                pl.style.display = 'none'
+                fr.style.display = 'none'
+                db.style.display = 'none'
+                ui.style.display = 'none'
+                ip.style.display = 'none'
+                ot.style.display = 'block'
             } else {
                 pl.style.display = 'none'
                 fr.style.display = 'none'
                 db.style.display = 'none'
                 ui.style.display = 'none'
                 ip.style.display = 'block'
+                ot.style.display = 'none'
             }
         })
     });
